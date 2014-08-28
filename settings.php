@@ -19,36 +19,47 @@ if(!class_exists('Franchise_Manager_Settings'))
         public function admin_init()
         {
         	// register your plugin's settings
-        	register_setting('franchise_manager-group', 'setting_a');
-        	register_setting('franchise_manager-group', 'setting_b');
+        	register_setting('franchise-manager-group', 'setting_a');
+        	register_setting('franchise-manager-group', 'setting_b');
+            register_setting('franchise-manager-group', 'setting_c');
 
         	// add your settings section
         	add_settings_section(
-        	    'franchise_manager-section', 
+        	    'franchise-manager-section',
         	    'Franchise Manager Settings', 
         	    array(&$this, 'settings_section_franchise_manager'), 
-        	    'franchise_manager'
+        	    'franchise-manager'
         	);
         	
         	// add your setting's fields
             add_settings_field(
-                'franchise_manager-setting_a', 
+                'franchise-manager-setting_a',
                 'Setting A', 
                 array(&$this, 'settings_field_input_text'), 
-                'franchise_manager', 
-                'franchise_manager-section',
+                'franchise-manager',
+                'franchise-manager-section',
                 array(
                     'field' => 'setting_a'
                 )
             );
             add_settings_field(
-                'franchise_manager-setting_b', 
+                'franchise-manager-setting_b',
                 'Setting B', 
                 array(&$this, 'settings_field_input_text'), 
-                'franchise_manager', 
-                'franchise_manager-section',
+                'franchise-manager',
+                'franchise-manager-section',
                 array(
                     'field' => 'setting_b'
+                )
+            );
+            add_settings_field(
+                'franchise-manager-setting_c',
+                'Setting C',
+                array(&$this, 'settings_field_input_text'),
+                'franchise-manager',
+                'franchise-manager-section',
+                array(
+                    'field' => 'setting_c'
                 )
             );
             // Possibly do additional admin_init tasks
@@ -57,7 +68,7 @@ if(!class_exists('Franchise_Manager_Settings'))
         public function settings_section_franchise_manager()
         {
             // Think of this as help text for the section.
-            echo 'These settings do things for the Franchise Manager.';
+            echo 'These settings do things for the Franchise Manager. They are actually stored in WP as new OPTIONS, and must be referenced as such when utilising their values';
         }
         
         /**
@@ -83,7 +94,7 @@ if(!class_exists('Franchise_Manager_Settings'))
         	    'Franchise Manager Settings', 
         	    'Franchise Manager', 
         	    'manage_options', 
-        	    'franchise_manager', 
+        	    'franchise-manager',
         	    array(&$this, 'plugin_settings_page')
         	);
         } // END public function add_menu()
@@ -103,3 +114,6 @@ if(!class_exists('Franchise_Manager_Settings'))
         } // END public function plugin_settings_page()
     } // END class Franchise_Manager_Settings
 } // END if(!class_exists('Franchise_Manager_Settings'))
+
+
+

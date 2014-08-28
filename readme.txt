@@ -4,23 +4,30 @@ Tags: admin, users, post-type, content, manage
 License: GPL v2
 Requires at least: 3.8
 
-Enables the Franchise Manager Plugin. 
+Provides Microsites, Landing pages and more to Franchise based businesses.
 
 == Description ==
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The Franchise Manager Plugin provides a simple set of tools for managing and operating several location-based microsites
+for a small-to-medium sized franchise-oriented business. Each franchise location can be managed and maintained by the
+Site Admin or the Franchisee via the WordPress website.
 
 = Features of the Plugin =
 
-* Feature 1.
-* Feature 2.
+* Adds a Custom Post Type - Location
+* Adds a new User Role - Franchisee
 * Feature 3.
 * Feature 4.
 * Feature 5.
 
 == Installation ==
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Install through the WordPress admin or upload the plugin folder to your "/wp-content/plugins/" directory.
+
+Then activate the plugin through the 'Plugins' menu in WordPress.
+
+Once the plugin is installed and functioning, you'll need to make the new content types visible. To do this, you simply
+need to duplicate the "single.php" file in your Theme directory and name it "single-location.php".
 
 == Changelog ==
 
@@ -28,4 +35,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Basic, core version of plugin.
 
 = 0.0 =
-Inital layout of structure for plugin.
+Initial layout of structure for plugin.
