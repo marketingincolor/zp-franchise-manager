@@ -8,14 +8,14 @@ if(!class_exists('Post_Type_Template'))
 	{
         const POST_TYPE	= "franchise";
 		private $_meta	= array(
-			'meta_a', // address1
-			'meta_b', // address2
-			'meta_c', // city
-            'meta_d', // state
-            'meta_e', // zip
-            'meta_f', // phone1
-            'meta_g', // phone2
-            'meta_h', // email
+			'zp_meta_a', // address1
+			'zp_meta_b', // address2
+			'zp_meta_c', // city
+            'zp_meta_d', // state
+            'zp_meta_e', // zip
+            'zp_meta_f', // phone1
+            'zp_meta_g', // phone2
+            'zp_meta_h', // email
 		);
 
     	/**
