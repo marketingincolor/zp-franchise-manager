@@ -6,7 +6,7 @@ if(!class_exists('Post_Type_Template'))
      */
     class Post_Type_Template
     {
-        const POST_TYPE	= "Location";
+        const POST_TYPE	= "location";
         private $_meta	= array(
             'meta_a', // address1
             'meta_b', // address2

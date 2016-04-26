@@ -43,7 +43,7 @@ if(!class_exists('Franchise_Manager'))
 			$Franchise_Manager_Settings = new Franchise_Manager_Settings();
 
 			// Register custom post types
-			require_once(sprintf("%s/post-types/location.php", dirname(__FILE__)));
+			require_once(sprintf("%s/post-types/franchise.php", dirname(__FILE__)));
 			$Post_Type_Template = new Post_Type_Template();
 
 			$plugin = plugin_basename(__FILE__);
@@ -108,7 +108,7 @@ if(!class_exists('Franchise_Manager'))
             $roles_object->remove_cap('administrator', 'manage_locations');
             $roles_object->remove_cap('administrator', 'delete_locations');
             $roles_object->remove_cap('administrator', 'read_locations');
-			
+
 		} // END public static function deactivate
 
 		// Add the settings link to the plugins page
@@ -118,7 +118,7 @@ if(!class_exists('Franchise_Manager'))
 			array_unshift($links, $settings_link);
 			return $links;
 		}
-		
+
 	} // END class Franchise_Manager
 } // END if(!class_exists('Franchise_Manager'))
 
