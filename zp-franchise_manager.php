@@ -137,16 +137,18 @@ if(class_exists('Franchise_Manager'))
  * Remove the slug from published post permalinks for Post Type
  */
 function fm_remove_cpt_slug( $post_link, $post ) {
-    if ( ! in_array( $post->post_type, array( 'location' ) ) || 'publish' != $post->post_status )
+    if ( ! in_array( $post->post_type, array( 'franchise' ) ) || 'publish' != $post->post_status )
         return $post_link;
 
     $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
     return $post_link;
 }
 add_filter( 'post_type_link', 'fm_remove_cpt_slug', 10, 2 );
+
 /**
  * Bypass request for custom Post Type
  */
+ // TODO variablise this bypass to use site value, if set
 function fm_parse_request_bypass( $query ) {
     if ( ! $query->is_main_query() )
         return;
@@ -155,7 +157,7 @@ function fm_parse_request_bypass( $query ) {
         return;
 
     if ( ! empty( $query->query['name'] ) )
-        $query->set( 'post_type', array( 'post', 'location', 'page' ) );
+        $query->set( 'post_type', array( 'post', 'franchise', 'page' ) );
 }
 add_action( 'pre_get_posts', 'fm_parse_request_bypass' );
 

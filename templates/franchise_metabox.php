@@ -1,67 +1,67 @@
-<table> 
+<table>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_a">Address 1</label>
+            <label for="zpfm_meta_a">Address 1</label>
         </th>
         <td>
-            <input type="text" id="meta_a" name="meta_a" value="<?php echo @get_post_meta($post->ID, 'meta_a', true); ?>" />
+            <input type="text" id="zpfm_meta_a" name="zpfm_meta_a" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_a', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_b">Address 2</label>
+            <label for="zpfm_meta_b">Address 2</label>
         </th>
         <td>
-            <input type="text" id="meta_b" name="meta_b" value="<?php echo @get_post_meta($post->ID, 'meta_b', true); ?>" />
+            <input type="text" id="zpfm_meta_b" name="zpfm_meta_b" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_b', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_c">City</label>
+            <label for="zpfm_meta_c">City</label>
         </th>
         <td>
-            <input type="text" id="meta_c" name="meta_c" value="<?php echo @get_post_meta($post->ID, 'meta_c', true); ?>" />
+            <input type="text" id="zpfm_meta_c" name="zpfm_meta_c" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_c', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_d">State</label>
+            <label for="zpfm_meta_d">State</label>
         </th>
         <td>
-            <input type="text" id="meta_d" name="meta_d" value="<?php echo @get_post_meta($post->ID, 'meta_d', true); ?>" />
+            <input type="text" id="zpfm_meta_d" name="zpfm_meta_d" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_d', true); ?>" />
         </td>
     </tr>
 
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_e">ZIP</label>
+            <label for="zpfm_meta_e">ZIP</label>
         </th>
         <td>
-            <input type="text" id="meta_e" name="meta_e" value="<?php echo @get_post_meta($post->ID, 'meta_e', true); ?>" />
+            <input type="text" id="zpfm_meta_e" name="zpfm_meta_e" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_e', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_f">Phone 1</label>
+            <label for="zpfm_meta_f">Phone 1</label>
         </th>
         <td>
-            <input type="text" id="meta_f" name="meta_f" value="<?php echo @get_post_meta($post->ID, 'meta_f', true); ?>" />
+            <input type="text" id="zpfm_meta_f" name="zpfm_meta_f" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_f', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_g">Phone 2</label>
+            <label for="zpfm_meta_g">Phone 2</label>
         </th>
         <td>
-            <input type="text" id="meta_g" name="meta_g" value="<?php echo @get_post_meta($post->ID, 'meta_g', true); ?>" />
+            <input type="text" id="zpfm_meta_g" name="zpfm_meta_g" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_g', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="meta_h">Alt. Email</label>
+            <label for="zpfm_meta_h">Alt. Email</label>
         </th>
         <td>
-            <input type="text" id="meta_h" name="meta_h" value="<?php echo @get_post_meta($post->ID, 'meta_h', true); ?>" />
+            <input type="text" id="zpfm_meta_h" name="zpfm_meta_h" value="<?php echo @get_post_meta($post->ID, 'zpfm_meta_h', true); ?>" />
         </td>
     </tr>
 </table>

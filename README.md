@@ -31,7 +31,7 @@ Install through the WordPress admin or upload the plugin folder to your `/wp-con
 Then activate the plugin through the `Plugins` menu in WordPress.
 
 Once the plugin is installed and functioning, you'll need to make the new content types visible. To do this, you simply
-need to duplicate the `single.php` file in your Theme directory and name it `single-location.php`.
+need to duplicate the `single.php` file in your Theme directory and name it `single-franchise.php`.
 
 ####Changelog
 

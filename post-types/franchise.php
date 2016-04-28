@@ -8,14 +8,14 @@ if(!class_exists('Post_Type_Template'))
 	{
         const POST_TYPE	= "franchise";
 		private $_meta	= array(
-			'zp_meta_a', // address1
-			'zp_meta_b', // address2
-			'zp_meta_c', // city
-            'zp_meta_d', // state
-            'zp_meta_e', // zip
-            'zp_meta_f', // phone1
-            'zp_meta_g', // phone2
-            'zp_meta_h', // email
+			'zpfm_meta_a', // address1
+			'zpfm_meta_b', // address2
+			'zpfm_meta_c', // city
+            'zpfm_meta_d', // state
+            'zpfm_meta_e', // zip
+            'zpfm_meta_f', // phone1
+            'zpfm_meta_g', // phone2
+            'zpfm_meta_h', // email
 		);
 
     	/**
