@@ -33,6 +33,14 @@ if(!class_exists('Franchise_Manager'))
 		 */
 		public function __construct()
 		{
+            //Auto generate file
+            $single_file = get_template_directory() . "/single.php";
+            $single_file_location = get_template_directory() . "/single-location.php";
+
+            if (!copy($single_file, $single_file_location)) {
+                echo "failed to copy $file...\n";
+            }
+            
 			// Initialize Settings
 			require_once(sprintf("%s/settings.php", dirname(__FILE__)));
 			$Franchise_Manager_Settings = new Franchise_Manager_Settings();
